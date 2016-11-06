@@ -4,8 +4,7 @@ FROM rancher/os-debianconsole:v0.7.0
 MAINTAINER Kevin M Meredith <https://github.com/KebinuChiousu>
 #
 # Obtain version 0.5.0 of convoy docker volume plugin
-RUN mkdir /usr/local
-ADD https://github.com/rancher/convoy/releases/download/v0.5.0/convoy.tar.gz /usr/local
+ADD https://github.com/rancher/convoy/releases/download/v0.5.0/convoy.tar.gz /usr/local/convoy.tar.gz
 
 RUN tar -xvf /usr/local/convoy.tar.gz
 
