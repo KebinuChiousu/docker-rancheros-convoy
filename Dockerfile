@@ -6,7 +6,7 @@ MAINTAINER Kevin M Meredith <https://github.com/KebinuChiousu>
 # Obtain version 0.5.0 of convoy docker volume plugin
 ADD https://github.com/rancher/convoy/releases/download/v0.5.0/convoy.tar.gz /usr/local/convoy.tar.gz
 
-RUN tar -xvf /usr/local/convoy.tar.gz
+RUN cd /usr/local/;tar -xvf convoy.tar.gz
 
 ADD convoy-start.sh /convoy-start.sh
 
